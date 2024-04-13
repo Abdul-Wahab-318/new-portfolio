@@ -1,0 +1,10 @@
+.project-card svg {
+    transition: all 200ms ease;
+}
+.project-card:hover svg {
+    color: var(--teal-light);
+    transform: translate(5px,-5px);
+}
+.project-card:hover {
+    background-color: rgba(30, 41, 59, .5);
+}

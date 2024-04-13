@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --white : #E2E8F0 ;
+  --gray : #94A3B8 ;
+  --teal-light : rgb(94 234 212) ;
+  --teal-dark : rgba(45, 212, 191, .1);
+}
+html{
+  scroll-behavior: smooth;
+}
+*{
+    font-family: "Inter", sans-serif;
+    scroll-margin: 60px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--white) ;
+}
+a{
+  cursor: pointer;
+}
+p , span , a{
+  color: var(--gray);
+}
+.page {
+  padding: 100px 0;
+}
+
+.header-inner{
+  position: fixed;
+
+}
+
+nav ul li{
+  display: flex;
+  align-items: center;
+}
+.nav-active a{
+  color: var(--white) ;
+}
+.nav-active span {
+  width: 60px;
+  background-color: var(--white);
+}
+
+nav ul li span {
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: rgb(71 85 105);
+}
+nav ul li a {
+  padding-left: 20px;
+}
+
+.employment-card {
+  transition: all 200ms ease;
+}
+.employment-card:hover {
+  background-color: rgba(30, 41, 59, .5);
+}
+.resume-cta-text :is(h4,svg){
+
+  transition: all 300ms ease; 
+}
+.resume-cta-text:hover :is(h4,svg) {
+  color: rgb(94 234 212) !important;
+}
+.resume-cta-text:hover svg {
+  transform: translate(5px , -5px);
+}
+
