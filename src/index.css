@@ -32,10 +32,7 @@ p , span , a{
   padding: 100px 0;
 }
 
-.header-inner{
-  position: fixed;
 
-}
 
 nav ul li{
   display: flex;

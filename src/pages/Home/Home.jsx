@@ -27,10 +27,10 @@ import ContactForm from '../../components/ContactForm/ContactForm';
 export default function Home() {
   return (
     <div className='page home-page bg-slate-900 min-h-[100vh]'>
-      <div className="container max-w-screen-xl ">
+      <div className="container max-w-screen-md lg:max-w-screen-xl ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <header>
-            <div className="header-inner">
+            <div className="header-inner static lg:fixed">
               <h1 className='tracking-light font-bold text-4xl sm:text-5xl mb-3'>Abdul Wahab Malik</h1>
               <h4 className='text-xl font-medium tracking-light text-slate-200'>Software Engineer</h4>
               <p className='mt-5 max-w-[30ch]'>I build full stack applications using best software engineering practices</p>
@@ -39,8 +39,8 @@ export default function Home() {
                 <ul className='flex flex-col gap-6'>
                   <li className='uppercase nav-active font-bold text-xs tracking-widest'> <span></span> <a href="#about">About</a> </li>
                   <li className='uppercase font-bold text-xs tracking-widest'> <span></span> <a href="#resume">Experience</a> </li>
-                  <li className='uppercase font-bold text-xs tracking-widest'> <span></span> <a href="#">Projects</a> </li>
-                  <li className='uppercase font-bold text-xs tracking-widest'> <span></span> <a href="#">Achievements</a> </li>
+                  <li className='uppercase font-bold text-xs tracking-widest'> <span></span> <a href="#projects">Projects</a> </li>
+                  <li className='uppercase font-bold text-xs tracking-widest'> <span></span> <a href="#achievements">Achievements</a> </li>
                 </ul>
               </nav>
 
@@ -52,8 +52,8 @@ export default function Home() {
             </div>
           </header>
           <main>
-            <section id="about">
-              <h3 className="text-sm tracking-widest font-bold uppercase mb-6 mt-24 lg:mt-0">About</h3>
+            <section id="about" className='text-justify'>
+              <h3 className="text-sm tracking-widest font-bold uppercase mb-6 mt-24 lg:mt-0 sticky lg:relative top-0 py-4 backdrop-blur ">About</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint magnam impedit est soluta similique veritatis, unde autem corrupti qui eius reprehenderit cumque alias, dolorem consequuntur debitis necessitatibus laudantium. Nobis!</p>
               <br />
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda repellendus dignissimos ullam, impedit, quidem officia eius dolor corporis numquam distinctio excepturi ipsum non minima! Laborum aspernatur voluptatum nisi non alias.</p>
@@ -61,7 +61,7 @@ export default function Home() {
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi enim animi facere iure beatae deserunt hic eum provident, molestiae incidunt amet, voluptatibus placeat expedita? Pariatur consequatur modi quos iusto labore!</p>
             </section>
             <section id="resume" className='mt-24'>
-              <h3 className="text-sm tracking-widest font-bold uppercase mb-6">resume</h3>
+              <h3 className="text-sm tracking-widest font-bold uppercase mb-6 sticky lg:relative top-0 py-4 backdrop-blur ">resume</h3>
               <div className="employment-cards-wrapper">
                 <ExperienceCard/>
                 <a href={resume} download={'AbdulWahab_Resume_2024'} className='resume-cta-text flex gap-3 mt-12 items-center '>
@@ -71,7 +71,7 @@ export default function Home() {
               </div>
             </section>
             <section id="skills" className='mt-24'>
-              <h3 className="text-sm tracking-widest font-bold uppercase mb-6">Skills</h3>
+              <h3 className="text-sm tracking-widest font-bold uppercase mb-6 sticky lg:relative top-0 py-4 backdrop-blur ">Skills</h3>
               <div className='flex items-center gap-4'>
                 <h2 className='text-sm font-medium'>Front End:</h2>
                 <div>
@@ -119,7 +119,7 @@ export default function Home() {
               </div>
             </section>
             <section id="projects" className='mt-24'>
-              <h3 className="text-sm tracking-widest font-bold uppercase mb-6">Projects</h3>
+              <h3 className="text-sm tracking-widest font-bold uppercase mb-6 sticky lg:relative top-0 py-4 backdrop-blur ">Projects</h3>
               <div className="project-cards-wrapper flex flex-col gap-8 ">
                 <ProjectCard/>
                 <ProjectCard/>
@@ -132,7 +132,7 @@ export default function Home() {
               </Link>
             </section>
             <section id="achievements" className='mt-24'>
-              <h3 className="text-sm tracking-widest font-bold uppercase mb-6 mt-24 lg:mt-0">Achievements</h3>
+              <h3 className="text-sm tracking-widest font-bold uppercase mb-6 mt-24 lg:mt-0 sticky lg:relative top-0 py-4 backdrop-blur ">Achievements</h3>
               <div className="achievment-cards-wrapper flex flex-col gap-4">
                 <AchievementCard/>
                 <AchievementCard/>
