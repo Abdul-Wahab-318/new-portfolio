@@ -1,26 +1,20 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
 import Home from './pages/Home/Home.jsx';
 import Projects from './pages/Projects/Projects.jsx';
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home/>,
-  },
-  {
-    path: "/projects",
-    element: <Projects/>
-  }
-]);
+import GoogleAnalytics from './components/GoogleAnalytics/GoogleAnalytics.jsx'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 function App() {
 
   return (
-    <RouterProvider router={router} />
+    <Router>
+      <Routes>
+        <Route path="/" element={<GoogleAnalytics />}>
+          <Route index element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+        </Route>
+      </Routes>
+    </Router>
   )
 }
 

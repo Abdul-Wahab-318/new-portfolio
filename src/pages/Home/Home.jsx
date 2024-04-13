@@ -20,6 +20,8 @@ import mui from "../../assets/mui.png"
 import bootstrap from "../../assets/bootstrap.png"
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import { Link } from 'react-router-dom';
+import AchievementCard from '../../components/AchievementCard/AchievementCard';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 
 export default function Home() {
@@ -131,7 +133,12 @@ export default function Home() {
             </section>
             <section id="achievements" className='mt-24'>
               <h3 className="text-sm tracking-widest font-bold uppercase mb-6 mt-24 lg:mt-0">Achievements</h3>
+              <div className="achievment-cards-wrapper flex flex-col gap-4">
+                <AchievementCard/>
+                <AchievementCard/>
+              </div>
             </section>
+            <ContactForm/>
           </main>
         </div>
       </div>

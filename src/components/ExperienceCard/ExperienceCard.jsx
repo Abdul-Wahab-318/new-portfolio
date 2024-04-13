@@ -11,7 +11,7 @@ export default function ExperienceCard() {
             <div className='flex items-center'>
                 <h5 className="text-md font-medium leading-snug ">MERN Stack Developer</h5>
                 <div className="w-[3px] h-[3px] rounded bg-white mx-2 "></div>
-                <h5 className="font-medium text-md"> <a href="">Tapit Card</a></h5>
+                <h5 className="font-medium text-md">Tapit Card</h5>
             </div>
             <p className='mt-3 font-medium text-sm'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta amet quis non nemo beatae quibusdam quo, facere, facilis consequatur a aliquid accusantium dolorem pariatur iure provident ex eius in esse?</p>
             <div className='flex gap-2 mt-4 flex-wrap'>
