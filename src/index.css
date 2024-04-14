@@ -75,6 +75,17 @@ nav ul li a {
 input , textarea{
   font-weight: bold;
 }
-input:focus{
+input:focus , textarea:focus{
   outline: none;
+}
+
+th , td {
+  color: var(--white);
+}
+
+@media ( max-width : 640px )
+{
+  .page {
+    padding-block: 50px;
+  }
 }

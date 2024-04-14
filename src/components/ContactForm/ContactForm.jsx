@@ -77,7 +77,7 @@ export default function ContactForm() {
             <textarea onChange={ e => setMessage(e.target.value) } name="message" id="message" cols="30" rows="5" placeholder='Your Message' className='w-full bg-transparent text-slate-200 border-2 border-slate-200 px-4 py-3 rounded-md'></textarea>
             <p className='text-rose-500 text-sm font-bold uppercase ps-2 mb-3'>{error}</p>
             <div>
-                <button type='submit' disabled={loading} className='bg-teal-400/10 text-teal-300 p-4 px-8 rounded-md hover:bg-teal-400/5 transition font-bold tracking-[1px]'>submit</button>
+                <button type='submit' disabled={loading} className='bg-transparent border-2 border-slate-200 text-slate-300 p-4 px-8 rounded-md hover:text-white transition font-bold tracking-[1px]'>Submit</button>
             </div>
         </form>
         <ToastContainer/>

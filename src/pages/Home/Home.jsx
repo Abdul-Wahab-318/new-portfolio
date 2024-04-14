@@ -73,14 +73,14 @@ export default function Home() {
   return (
     <div className='page home-page bg-slate-900 min-h-[100vh]'>
       <div className="container max-w-screen-md lg:max-w-screen-xl ">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 xl:gap-6">
           <header>
             <div className="header-inner static lg:fixed">
               <h1 className='tracking-light font-bold text-4xl sm:text-5xl mb-3'>Abdul Wahab Malik</h1>
               <h4 className='text-xl font-medium tracking-light text-slate-200'>Software Engineer</h4>
-              <p className='mt-5 max-w-[30ch]'>I build full stack applications using best software engineering practices</p>
+              <p className='mt-5 max-w-[40ch]'>Building web wonders with coffee since 2021.</p>
 
-              <nav className='mt-16'>
+              <nav className='mt-16 hidden lg:block'>
                 <ul className='flex flex-col gap-6'>
                   <li className={`uppercase font-bold text-xs tracking-widest ${currentSection==='about' ? 'nav-active' : ''}`} > <span></span> <a href="#about">About</a> </li>
                   <li className={`uppercase font-bold text-xs tracking-widest ${currentSection==='resume' ? 'nav-active' : ''} `} > <span></span> <a href="#resume">Experience</a> </li>
@@ -89,7 +89,7 @@ export default function Home() {
                 </ul>
               </nav>
 
-              <ul className="socials flex gap-4 mt-12">
+              <ul className="socials flex gap-4 mt-4 sm:mt-12">
                 <li> <a href="https://github.com/Abdul-Wahab-318"> <GitHubIcon  sx={{color:'#94A3B8' , '&:hover' : { color : '#E2E8F0'} , transition : '300ms ease'}}/> </a> </li>
                 <li> <a href="https://www.linkedin.com/in/abdulwahabmalik318/"> <LinkedInIcon sx={{color:'#94A3B8' , '&:hover' : { color : '#E2E8F0' } , transition : '300ms ease'}}/> </a> </li>
                 <li> <a href="https://wa.me/923115163419"> <WhatsAppIcon sx={{color:'#94A3B8' , '&:hover' : { color : '#E2E8F0' } , transition : '300ms ease'}}/> </a> </li>
@@ -97,8 +97,8 @@ export default function Home() {
             </div>
           </header>
           <main>
-            <section id="about" ref={aboutRef} className='text-justify'>
-              <h3 className="text-sm tracking-widest font-bold uppercase mb-6 mt-24 lg:mt-0 sticky lg:relative top-0 py-4 backdrop-blur ">About</h3>
+            <section id="about" ref={aboutRef} className='text-justify mt-24 lg:mt-0'>
+              <h3 className="text-sm tracking-widest font-bold uppercase mb-6  lg:mt-0 sticky lg:relative top-0 pb-4 pt-1 backdrop-blur ">About</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint magnam impedit est soluta similique veritatis, unde autem corrupti qui eius reprehenderit cumque alias, dolorem consequuntur debitis necessitatibus laudantium. Nobis!</p>
               <br />
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda repellendus dignissimos ullam, impedit, quidem officia eius dolor corporis numquam distinctio excepturi ipsum non minima! Laborum aspernatur voluptatum nisi non alias.</p>

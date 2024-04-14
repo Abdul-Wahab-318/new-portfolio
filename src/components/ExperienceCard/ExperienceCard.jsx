@@ -4,10 +4,10 @@ import Pill from '../Pill/Pill'
 export default function ExperienceCard() {
   return (
     <a href='https://www.linkedin.com/posts/abdulwahabmalik318_nstp-nust-activity-7084037094595018752-wYXR?utm_source=share&utm_medium=member_desktop' className="employment-card rounded-md p-4 flex flex-col md:flex-row gap-1 md:gap-6 items-start -mx-4 -my-2">
-        <div className='w-1/4'>
+        <div className='sm:w-1/4'>
             <p className='text-xs uppercase font-medium'>Jun - Oct 2023</p>
         </div>
-        <div className='w-3/4'>
+        <div className='sm:w-3/4'>
             <div className='flex items-center'>
                 <h5 className="text-md font-medium leading-snug ">MERN Stack Developer</h5>
                 <div className="w-[3px] h-[3px] rounded bg-white mx-2 "></div>
