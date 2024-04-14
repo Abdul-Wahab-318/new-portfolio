@@ -22,6 +22,8 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import { Link } from 'react-router-dom';
 import AchievementCard from '../../components/AchievementCard/AchievementCard';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import experience from '../../variables/experience';
+import achievements from '../../variables/achievements';
 
 
 export default function Home() {
@@ -98,17 +100,19 @@ export default function Home() {
           </header>
           <main>
             <section id="about" ref={aboutRef} className='text-justify mt-24 lg:mt-0'>
-              <h3 className="text-sm tracking-widest font-bold uppercase mb-6  lg:mt-0 sticky lg:relative top-0 pb-4 pt-1 backdrop-blur ">About</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sint magnam impedit est soluta similique veritatis, unde autem corrupti qui eius reprehenderit cumque alias, dolorem consequuntur debitis necessitatibus laudantium. Nobis!</p>
+              <h3 className="text-sm tracking-widest font-bold uppercase mb-6  lg:mt-0 sticky lg:relative top-0 pb-4 pt-4 sm:pt-1  backdrop-blur ">About</h3>
+              <p>Back in 2021, I decided to give programming a shot to see what it's all about. I started programming simple console based applications using C++ and made my way to coding visually appealing websites using just HTML , CSS and Javascript</p>
               <br />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda repellendus dignissimos ullam, impedit, quidem officia eius dolor corporis numquam distinctio excepturi ipsum non minima! Laborum aspernatur voluptatum nisi non alias.</p>
+              <p>Slowly yet consistently, I made progress and started developing interactive applications for clients on fiverr and those I met through personal connections at my university. I also took participation in and won several inter-university programming competitions.</p>
               <br />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi enim animi facere iure beatae deserunt hic eum provident, molestiae incidunt amet, voluptatibus placeat expedita? Pariatur consequatur modi quos iusto labore!</p>
+              <p>In my free time, I like to work on personal projects. When I'm not at my computer, I'm usually watching anime, reading or hitting the gym </p>
             </section>
             <section id="resume" ref={experienceRef} className='mt-24'>
               <h3 className="text-sm tracking-widest font-bold uppercase mb-6 sticky lg:relative top-0 py-4 backdrop-blur ">resume</h3>
-              <div className="employment-cards-wrapper">
-                <ExperienceCard/>
+              <div className="employment-cards-wrapper gap-6 flex flex-col">
+                {
+                  experience.map( ( exp , ind ) => <ExperienceCard key={ind} data={exp} />)
+                }
                 <a href={resume} download={'AbdulWahab_Resume_2024'} className='resume-cta-text flex gap-3 mt-12 items-center '>
                   <h4 className="text-md font-bold">View Full Resume </h4>
                   <LaunchIcon className='launch-icon' fontSize='small' sx={{color:"#e2e8f0"}} />
@@ -179,8 +183,9 @@ export default function Home() {
             <section id="achievements" ref={achievementRef} className='mt-24'>
               <h3 className="text-sm tracking-widest font-bold uppercase mb-6 mt-24 lg:mt-0 sticky lg:relative top-0 py-4 backdrop-blur ">Achievements</h3>
               <div className="achievment-cards-wrapper flex flex-col gap-4">
-                <AchievementCard/>
-                <AchievementCard/>
+                {
+                  achievements.map( (ach , ind) => <AchievementCard key={ind} data={ach} />)
+                }
               </div>
             </section>
             <ContactForm/>

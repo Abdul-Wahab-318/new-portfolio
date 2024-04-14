@@ -73,7 +73,7 @@ nav ul li a {
   transform: translate(5px , -5px);
 }
 input , textarea{
-  font-weight: bold;
+  font-weight: 400;
 }
 input:focus , textarea:focus{
   outline: none;

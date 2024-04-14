@@ -16,7 +16,7 @@ export default function ProjectCard() {
                 <h5 className="text-md font-medium leading-snug group-hover:text-teal-300">Pixel Perfect Clone Of Real Estate Website</h5>
                 <ArrowOutwardIcon fontSize='small'  />
             </div>
-            <p className='mt-3 font-medium text-sm'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta amet quis non nemo beatae quibusdam quo, facere, facilis consequatur a aliquid accusantium dolorem pariatur iure provident ex eius in esse?</p>
+            <p className='mt-3 font-medium text-sm text-justify'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta amet quis non nemo beatae quibusdam quo, facere, facilis consequatur a aliquid accusantium dolorem pariatur iure provident ex eius in esse?</p>
             <div className='flex gap-2 mt-4 flex-wrap'>
 
             {
