@@ -24,6 +24,7 @@ import AchievementCard from '../../components/AchievementCard/AchievementCard';
 import ContactForm from '../../components/ContactForm/ContactForm';
 import experience from '../../variables/experience';
 import achievements from '../../variables/achievements';
+import { featuredProjects } from '../../variables/projects';
 
 
 export default function Home() {
@@ -170,9 +171,8 @@ export default function Home() {
             <section id="projects" ref={projectRef} className='mt-24'>
               <h3 className="text-sm tracking-widest font-bold uppercase mb-6 sticky lg:relative top-0 py-4 backdrop-blur ">Projects</h3>
               <div className="project-cards-wrapper flex flex-col gap-8 ">
-                <ProjectCard/>
-                <ProjectCard/>
-              </div>
+                { featuredProjects.map( (project , ind) => <ProjectCard key={ind} data={project} /> )}
+              </div> 
               <Link to={'/projects'} className='group  flex gap-3 mt-12 items-center '>
                 <h4 className="text-md font-bold">View Full Project Archive </h4>
                 <div className='group-hover:translate-x-1 transition'>
