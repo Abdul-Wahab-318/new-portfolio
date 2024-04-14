@@ -40,6 +40,12 @@ export const projects = [
 
     {
         date : '2024' ,
+        title : 'Ecom Deals' ,
+        skills : ['React' , 'Tailwind' ,'Google Sheets Script' ] ,
+        link : 'https://ecom-deals.netlify.app' 
+    } ,
+    {
+        date : '2024' ,
         title : 'Truckers' ,
         skills : ['React' , 'Node' , 'Express' , 'Socket.io' , 'MongoDB' , 'MUI' , 'Redux'] ,
         link : 'https://truckers-awm.netlify.app' 
@@ -47,20 +53,20 @@ export const projects = [
     {
         date : '2023' ,
         title : 'Transformatics' ,
-        skills : ['React' , 'Bootstrap' , 'Jazzcash Payment API' ] ,
+        skills : ['React' , 'Bootstrap' , 'Jazzcash Payment API' , 'Node' , 'Express' ] ,
         link : 'https://transformatics.pk' 
     } ,
     {
         date : '2023' ,
         title : 'IHA Agency' ,
         skills : ['React' , 'Bootstrap'] ,
-        link : 'https://iha-dev-ops.netlify.app/' 
+        link : 'https://iha-dev-ops.netlify.app' 
     } ,
     {
         date : '2023' ,
         title : 'Weather App' ,
         skills : ['React' , 'Chakra UI' , 'API integration' ] ,
-        link : 'https://weather-awm.netlify.app/' 
+        link : 'https://weather-awm.netlify.app' 
     } ,
     {
         date : '2022' ,
@@ -79,6 +85,31 @@ export const projects = [
         title : 'KFC Clone' ,
         skills : ['React' , 'Bootstrap' , 'Node' , 'Express' , 'MongoDB' ] ,
         link : 'https://transformatics.pk' 
+    } ,
+    {
+        date : '2021' ,
+        title : 'KFC Admin Panel' ,
+        skills : ['React' , 'Bootstrap' , 'Node' , 'Express' , 'MongoDB' ] ,
+        link : 'https://github.com/Abdul-Wahab-318/adminPanel-kfc' ,
+        showGithubRepo : true
+    } ,
+    {
+        date : '2021' ,
+        title : 'Restabook Restaurant' ,
+        skills : ['HTML' ,'CSS' , 'Bootstrap' , 'Javascript'] ,
+        link : 'https://awm-restaurant.netlify.app' ,
+    } ,
+    {
+        date : '2021' ,
+        title : 'Mingrand Real Estate' ,
+        skills : ['HTML' ,'CSS' , 'Bootstrap' , 'Javascript'] ,
+        link : 'https://real-estate-awm.netlify.app' ,
+    } ,
+    {
+        date : '2021' ,
+        title : 'Construction Website' ,
+        skills : ['HTML' ,'CSS' , 'Bootstrap' , 'Javascript'] ,
+        link : 'https://awm-construction.netlify.app' ,
     }
 
 ]

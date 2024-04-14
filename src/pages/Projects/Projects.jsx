@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Pill from '../../components/Pill/Pill';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
-
+import { projects } from '../../variables/projects';
+import { GitHub } from '@mui/icons-material';
 export default function Projects() {
   return (
     <div className='page projects-page bg-slate-900 min-h-[100vh]'>
@@ -26,20 +27,8 @@ export default function Projects() {
               </tr>
             </thead>
             <tbody>
-              <ProjectRow/>
-              <ProjectRow/>
-              <ProjectRow/>
-              <ProjectRow/>
-              <ProjectRow/>
-              <ProjectRow/>
-              <ProjectRow/>
-              <ProjectRow/>
-              <ProjectRow/>
-              <ProjectRow/>
-              <ProjectRow/>
-              <ProjectRow/>
-              <ProjectRow/>
-              <ProjectRow/>
+              {projects.map( (proj,ind) => <ProjectRow key={ind} data={proj} />)}
+
 
             </tbody>
           </table>
@@ -50,27 +39,39 @@ export default function Projects() {
 }
 
 
-const ProjectRow = () => {
+const ProjectRow = ({ data }) => {
+  
+  const { title , date , link , skills } = data 
+
   return(
     <tr className='border-b border-slate-300/10 last:border-none w-full'>
-      <td className='text-slate-300 text-sm align-top py-4 pr-4'>2023</td>
+      <td className='text-slate-300 text-sm align-top py-4 pr-4'>{date}</td>
       <td className='text-md font-bold align-top py-4 pr-6 max-w-[400px] '>
-        <p className='hidden sm:block text-slate-200 mt-[-2px]'> Emerson Collective Lorem ipsum dolor sit amet </p>
-        <a href='' className='block sm:hidden pr-4 mt-[-2px]'>
-          <span className='text-slate-200 font-semibold'>Emerson collective something something</span>
+        <p className='hidden sm:block text-slate-200 mt-[-2px]'> {title} </p>
+        <a href={title} target="_blank" rel="noopener" className='block sm:hidden pr-4 mt-[-2px]'>
+          <span className='text-slate-200 font-semibold'>{title}</span>
           <span className='ps-2'><ArrowOutwardIcon fontSize='md' sx={{color:'#e2e8f0'}} /></span>
           
         </a>
       </td>
       <td className=' text-md font-bold align-top py-4 pr-4 max-w-[400px] flex gap-1.5 flex-wrap hidden lg:flex'>
         {
-          ['mongoDB' , 'React' , 'Node' , 'Express' , 'MUI' , 'Tailwind' ].map( (el,ind) => <Pill key={ind}>{el}</Pill>)
+          skills.map( (el,ind) => <Pill key={ind}>{el}</Pill>)
         } 
       </td>
       <td className=' text-sm font-semibold align-top py-4 pr-6 max-w-[400px] hidden sm:table-cell'>
-        <a href='' className='flex items-center gap-1 group '>
-          <span className=''>abdulwahab.netlify.app</span>
-          <span className='group-hover:translate-x-2 group-hover:translate-y-[-3px] transition'><ArrowOutwardIcon fontSize='sm'  /></span>
+        <a href={link} target="_blank" rel="noopener" className='flex items-center gap-1 group '>
+          { data.showGithubRepo ?
+            <>
+              <span className='mr-2'>Github</span>
+              <GitHub fontSize='small' />
+            </>
+            :
+            <>
+              <span>{link.slice(8)}</span>
+              <span className='group-hover:translate-x-2 group-hover:translate-y-[-3px] transition'><ArrowOutwardIcon fontSize='sm'  /></span>
+            </>
+          }
         </a>
       </td>
     </tr>
