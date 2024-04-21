@@ -42,7 +42,7 @@ export const projects = [
         date : '2024' ,
         title : 'Ecom Deals' ,
         skills : ['React' , 'Tailwind' ,'Google Sheets Script' ] ,
-        link : 'https://ecom-deals.netlify.app' 
+        link : 'https://e-comdeals.com' 
     } ,
     {
         date : '2024' ,
