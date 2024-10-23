@@ -18,6 +18,9 @@ import tailwind from "../../assets/tailwind.png"
 import redux from "../../assets/redux.png"
 import mui from "../../assets/mui.png"
 import bootstrap from "../../assets/bootstrap.png"
+import python from "../../assets/python.svg"
+import tf from "../../assets/tf.svg"
+import scikit from "../../assets/scikit.svg"
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import { Link } from 'react-router-dom';
 import AchievementCard from '../../components/AchievementCard/AchievementCard';
@@ -122,7 +125,7 @@ export default function Home() {
             </section>
             <section id="skills" className='mt-24'>
               <h3 className="text-sm tracking-widest font-bold uppercase mb-6 sticky lg:relative top-0 py-4 backdrop-blur ">Skills</h3>
-              <div className='flex items-center gap-4'>
+              <div className='flex items-center gap-2 md:gap-4'>
                 <h2 className='text-sm font-medium'>Front End:</h2>
                 <div>
                   <img src={js} width={'30px'} alt="" />
@@ -153,6 +156,18 @@ export default function Home() {
                 </div>
                 <div>
                   <img src={mongodb} width={'30px'} alt="" />
+                </div>
+              </div>
+              <div className='flex items-center gap-4 mt-6'>
+                <h2 className='text-sm font-medium'>Machine Learning:</h2>
+                <div>
+                  <img src={tf} width={'30px'} alt="" />
+                </div>
+                <div>
+                  <img src={python} width={'30px'} alt="" />
+                </div>
+                <div>
+                  <img src={scikit} width={'45px'} style={{width:'50px'}} alt="" />
                 </div>
               </div>
               <div className='flex items-center gap-4 mt-6'>
