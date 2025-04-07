@@ -5,7 +5,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LaunchIcon from '@mui/icons-material/Launch';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ExperienceCard from '../../components/ExperienceCard/ExperienceCard';
-import resume from '../../assets/AbdulWahab_Resume_2024.pdf'
+import resume from '../../assets/AbdulWahab_Resume.pdf'
 import github from '../../assets/github.png'
 import js from "../../assets/js.png"
 import react from "../../assets/react.png"
@@ -117,7 +117,7 @@ export default function Home() {
                 {
                   experience.map( ( exp , ind ) => <ExperienceCard key={ind} data={exp} />)
                 }
-                <a href={resume} download={'AbdulWahab_Resume_2024'} className='resume-cta-text flex gap-3 mt-12 items-center '>
+                <a href={resume} download={'AbdulWahab_Resume'} className='resume-cta-text flex gap-3 mt-12 items-center '>
                   <h4 className="text-md font-bold">View Full Resume </h4>
                   <LaunchIcon className='launch-icon' fontSize='small' sx={{color:"#e2e8f0"}} />
                 </a>

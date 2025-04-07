@@ -1,5 +1,12 @@
 export const featuredProjects = [
     {
+        image : './price-wice.jpg' ,
+        title : 'Price Wice' ,
+        skills : ['Next.js' , 'Web Scraping' , 'Cheerio' , 'MongoDB' , 'Tailwind'] ,
+        summary : 'Get an email update whenever a product’s price changes. Just enter the product’s url and wait for the price to drop  ' ,
+        link : 'https://price-wice.vercel.app/' 
+    } ,
+    {
         image : './truckers.jpg' ,
         title : 'Truckers' ,
         skills : ['React' , 'Node' , 'Express' , 'Socket.io' , 'MongoDB' , 'MUI' , 'Redux'] ,
@@ -7,25 +14,18 @@ export const featuredProjects = [
         link : 'https://truckers-awm.netlify.app' 
     } ,
     {
-        image : './moneytracker.jpg' ,
-        title : 'Budget Tracker' ,
-        skills : ['React' , 'Bootstrap' , 'Redux' , 'Chartjs' ] ,
-        summary : 'A budget tracking system for user\'s monthly expenses and income. Provides insights using different graphs and charts ' ,
-        link : 'https://moneytracker-awm.netlify.app' 
-    } ,
-    {
-        image : './taptime.png' ,
-        title : 'Taptime' ,
-        skills : ['React' , 'Tailwind' , 'Node' , 'Express' , 'MongoDB' ] ,
-        summary :  'Paid order from fiverr for managing user\'s tasks and tracks the time taken to complete each task ' ,
-        link : 'https://moneytracker-awm.netlify.app' 
-    } ,
-    {
         image : './transformatics.jpg' ,
         title : 'Transformatics' ,
         skills : ['React' , 'Bootstrap' , 'Jazzcash Payment API' ] ,
         summary :  'Paid project by transformatics to redesign and redevelop their website to give a modern feel. Implemented techniques for increasing google PageSpeed Insigh score.' ,
         link : 'https://transformatics.pk' 
+    } ,
+    {
+        image : './moneytracker.jpg' ,
+        title : 'Budget Tracker' ,
+        skills : ['React' , 'Bootstrap' , 'Redux' , 'Chartjs' ] ,
+        summary : 'A budget tracking system for user\'s monthly expenses and income. Provides insights using different graphs and charts ' ,
+        link : 'https://moneytracker-awm.netlify.app' 
     } ,
     {
         image : './kfc.png' ,
@@ -37,6 +37,20 @@ export const featuredProjects = [
 ]
 
 export const projects = [
+
+    {
+        date : '2024' ,
+        title : 'Price Wice' ,
+        skills : ['Next.js' , 'Web Scraping' , 'Cheerio' , 'MongoDB' , 'Tailwind'] ,
+        link : 'https://price-wice.vercel.app/' 
+    } ,
+
+    {
+        date : '2024' ,
+        title : 'Dispatch Geniuses' ,
+        skills : ['Next.js' , 'Tailwind' ,'Contentful' ] ,
+        link : 'https://dispatchgeniuses.com/' 
+    } ,
 
     {
         date : '2024' ,
@@ -67,12 +81,6 @@ export const projects = [
         title : 'Weather App' ,
         skills : ['React' , 'Chakra UI' , 'API integration' ] ,
         link : 'https://weather-awm.netlify.app' 
-    } ,
-    {
-        date : '2022' ,
-        title : 'Taptime' ,
-        skills : ['React' , 'Tailwind' , 'Node' , 'Express' , 'MongoDB' ] ,
-        link : 'https://moneytracker-awm.netlify.app' 
     } ,
     {
         date : '2022' ,
